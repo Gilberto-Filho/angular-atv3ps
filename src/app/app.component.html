@@ -1,0 +1,16 @@
+<h1>IFPAD</h1>
+<table>
+ <td>
+   <tr> DIGITE SUA ANOTAÇÃO:
+     <input type="Text" [(ngModel)]=campoTxt></tr>
+ 
+   <h3><button type="submit" (click)="salvarTxt()">SALVAR </button></h3>
+ </td>
+ <br>
+</table>
+ <h2>SUAS ANOTAÕES</h2>
+  <ol *ngFor="let txt of lTxt">
+   {{txt}}
+  <button type="submit" (click)="apagarTxt(txt)" style="color:red"> REMOVER </button>
+  
+  </ol>
